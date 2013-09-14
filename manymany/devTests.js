@@ -1,0 +1,1 @@
+﻿var theUser = ds.User(10);ds.UserGroup.query("user == :1", theUser); //Errords.UserGroup.query("user.ID == :1", 10); //Works

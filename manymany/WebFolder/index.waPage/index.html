@@ -1,0 +1,36 @@
+﻿<!DOCTYPE html><html>
+	<head>
+		<title>Main Page</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+		<meta name="generator" content="Wakanda GUIDesigner"/>
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
+		<meta name="WAF.packageJson"/>
+		<meta name="WAF.catalog" content="Group,User,UserGroup"/>
+		<meta name="wakanda-version" content="6 build 6.141182"/>
+		<meta name="wakanda-build" content="6.141182"/>
+		<meta name="WAF.config.loadCSS" id="waf-interface-css" content="styles/index.css"/>
+		<meta name="WAF.config.loadCSS" id="waf-project-css" content="/application.css"/>
+
+		<meta name="WAF.config.datasources" data-type="dataSource" data-source-type="dataClass" data-source="Group" data-lib="WAF" data-id="group" data-dataType="string" data-autoLoad="true" content="group"/>
+		
+		<meta name="WAF.config.datasources" data-type="dataSource" data-source-type="dataClass" data-source="User" data-lib="WAF" data-id="user" data-dataType="string" data-autoLoad="true" content="user"/><meta name="WAF.config.loadJS" id="waf-script" content="scripts/index.js"/>
+		
+		<meta name="WAF.config.datasources" data-type="dataSource" data-source-type="dataClass" data-source="UserGroup" data-lib="WAF" data-id="userGroup" data-dataType="string" data-autoLoad="true" content="userGroup"/><meta name="WAF.config.datasources" data-type="dataSource" data-source-type="dataClass" data-source="group.users" data-lib="WAF" data-id="users" data-dataType="string" data-autoLoad="true" content="users"/>
+		<meta name="WAF.config.datasources" data-type="dataSource" data-source-type="dataClass" data-source="user.groups" data-lib="WAF" data-id="groups" data-dataType="string" data-autoLoad="true" content="groups"/>
+</head>
+	<body id="waf-body" data-workspace-width="0" data-workspace-orientation="portrait" data-workspace-height="0" data-viewport-width="device-width" data-viewport-minimum-scale="1.0" data-viewport-maximum-scale="1.0" data-viewport-initial-scale="1.0" data-type="document" data-theme="light" data-rpc-validation="false" data-rpc-namespace="rpc" data-rpc-activate="false" data-platform="desktop" data-lib="WAF" data-group="[]" data-entire-model="false" data-apple-meta-tags-status-bar="default" style="bottom:;right:;visibility:hidden;">
+		<div id="allUsersGrid" data-type="dataGrid" data-selection-mode="single" data-lib="WAF" data-label-position="top" data-label="Users (Selected)" data-footer-text="item(s)" data-display-error="true" data-constraint-top="true" data-constraint-left="true" data-column="[{'sourceAttID':'ID','colID':'ID','width':'70','title':'ID'},{'sourceAttID':'name','colID':'name','width':'150','title':'name'}]" data-binding="user" class="waf-widget waf-dataGrid "></div>
+		<label id="label1" for="allUsersGrid" data-valign="middle" data-type="label" data-margin="5" data-lib="WAF" data-constraint-top="true" data-constraint-left="true" class="waf-widget waf-label waf-label-dataGrid">Users (Selected)</label>
+	<div id="allGroupsGrid" data-type="dataGrid" data-selection-mode="single" data-lib="WAF" data-label-position="top" data-label="Groups (Selected)" data-footer-text="item(s)" data-display-error="true" data-constraint-top="true" data-constraint-left="true" data-column="[{'sourceAttID':'ID','colID':'ID','width':'70','title':'ID'},{'sourceAttID':'name','colID':'name','width':'150','title':'name'}]" data-binding="group" class="waf-widget waf-dataGrid "></div>	<label id="label2" for="allGroupsGrid" data-valign="middle" data-type="label" data-margin="5" data-lib="WAF" class="waf-widget waf-label waf-label-dataGrid">Groups (Selected)</label>
+	<div id="relatedGroupsGrid" data-type="dataGrid" data-selection-mode="single" data-readOnly="true" data-lib="WAF" data-label-position="top" data-label="" data-footer-text="item(s)" data-display-error="true" data-constraint-top="true" data-constraint-left="true" data-column="[{'sourceAttID':'ID','colID':'ID','width':'70','title':'ID'},{'sourceAttID':'name','colID':'name','width':'150','title':'name'}]" data-binding="groups" class="waf-widget waf-dataGrid "></div>
+		<div id="relatedUsersGrid" data-type="dataGrid" data-selection-mode="single" data-readOnly="true" data-lib="WAF" data-label-position="top" data-label="" data-footer-text="item(s)" data-display-error="true" data-constraint-top="true" data-constraint-left="true" data-column="[{'sourceAttID':'ID','colID':'ID','width':'70','title':'ID'},{'sourceAttID':'name','colID':'name','width':'150','title':'name'}]" data-binding="users" class="waf-widget waf-dataGrid "></div>	<button id="assignGroupServerButton" data-type="button" data-text="via Server" data-target="_blank" data-lib="WAF" data-constraint-top="true" data-constraint-left="true" data-action="simple" class="waf-widget waf-button "></button>
+		<button id="assignGroupClientButton" data-type="button" data-text="on Client" data-target="_blank" data-lib="WAF" data-constraint-top="true" data-constraint-left="true" data-action="simple" class="waf-widget waf-button "></button>
+			<div id="richText1" data-type="richText" data-target="_blank" data-plainText="true" data-overflow="Hidden" data-lib="WAF" data-label-position="left" data-label="" data-constraint-top="true" data-constraint-left="true" data-autoWidth="true" class="waf-widget waf-richText ">Assign to selected group</div>
+			<div id="UserGroupGrid" data-type="dataGrid" data-selection-mode="single" data-lib="WAF" data-label-position="top" data-label="" data-footer-text="item(s)" data-display-error="true" data-constraint-top="true" data-constraint-left="true" data-column="[{'sourceAttID':'ID','colID':'ID','width':'70','title':'ID'},{'sourceAttID':'user.name','colID':'user_name','width':'100','title':'user'},{'sourceAttID':'group.name','colID':'group_name','width':'100','title':'group'}]" data-binding="userGroup" class="waf-widget waf-dataGrid "></div>
+	
+		<button id="removeGroupServerButton" data-type="button" data-text="via Server" data-target="_blank" data-lib="WAF" data-constraint-top="true" data-constraint-left="true" data-action="simple" class="waf-widget waf-button "></button>
+		<button id="removeGroupClientButton" data-type="button" data-text="on Client" data-target="_blank" data-lib="WAF" data-constraint-top="true" data-constraint-left="true" data-action="simple" class="waf-widget waf-button "></button>
+		<div id="richText3" data-type="richText" data-target="_blank" data-plainText="true" data-overflow="Hidden" data-lib="WAF" data-label-position="left" data-label="" data-constraint-top="true" data-constraint-left="true" data-autoWidth="true" class="waf-widget waf-richText ">Remove from selected group</div>
+		
+		<script type="text/javascript" src="/waLib/WAF/Loader.js"></script><div id="richText2" data-type="richText" data-target="_blank" data-plainText="true" data-overflow="Hidden" data-lib="WAF" data-label-position="left" data-label="" data-constraint-top="true" data-constraint-left="true" data-autoWidth="true" class="waf-widget waf-richText ">Remove from selected group</div></body>
+</html>
